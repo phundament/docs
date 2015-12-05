@@ -29,5 +29,4 @@ Features
 
 - LESS-compiler and closure-compiler on PHP-CLI and PHP-FPM for seamless integration with Yii 2.0 Framework asset-bundles 
 - xDebug
-- APCu support 
-- 
+- APCu support
