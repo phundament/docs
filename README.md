@@ -16,10 +16,10 @@ Phundament developer documentation
 
 ### Setup
 
-- [Installation]
-- [Configuration]
-- [Users]
-- [Settings]
+- [Installation](2-setup/installation.md)
+- [Configuration](2-setup/configuration.md)
+- [Users](2-setup/)
+- [Settings](2-setup/)
 
 ### Development
 

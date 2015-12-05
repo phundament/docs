@@ -3,10 +3,22 @@ Extension Development
 
 If you plan to reuse functionality, it is recommended to provide the code in composer packages. Luckily, Yii 2.0 Framework is equipped with a code generator for creating ready to use extension skeletons in a minute.
 
-> Note! Code generation is only available with `YII_ENV_DEV=true`.
+Forking 3rd-party extensions in vendor
+--------------------------------------
+
+Set constraint to `@dev` before starting code modifications and run 
+    
+    composer require vendor/package:@dev
+     
+> If you've already changed code in a dist-package, you can move away the package with the changes.
+> `mv package _package`, run the above command and then copy only the contents from the modified folder
+> into the package folder. `git status` should now your changes now.
+
 
 Building an extension
 ---------------------
+
+> Note! Code generation is only available with `YII_ENV_DEV=true`.
 
 ### Generating skeleton with Gii
 

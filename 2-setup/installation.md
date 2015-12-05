@@ -12,6 +12,10 @@ Create environment configuration file
     cd app
     cp .env-dist .env
 
+> Phundament uses a `Makefile` to execute common tasks during development. 
+> All `make` commands without a configuration target, are run on the default stack 
+> without additional `docker-compose` parameters.
+
 For the first initial setup run
 
     make all
@@ -20,7 +24,7 @@ You can also chain single commands
 
     make up setup open
    
-Or use configuration targets
+Or use configuration targets for compose stacks
    
     make TEST all
     
