@@ -18,8 +18,8 @@ Phundament developer documentation
 
 - [Installation](2-setup/installation.md)
 - [Configuration](2-setup/configuration.md)
-- [Users](2-setup/)
-- [Settings](2-setup/)
+- [Users and permissions](2-setup/user-permissions.md)
+- [Settings](2-setup/settings.md)
 
 ### Development
 
@@ -27,8 +27,6 @@ Phundament developer documentation
 - [Code-generation]
 - [Build]
 - [CLI Tools]
-- 
-- [Local project development and testing](31-develop-local-project-setup.md)
 
 
 ### Testing
@@ -40,7 +38,7 @@ Phundament developer documentation
 
 ### Deployment
 
-- [Staging]()
+- [Staging]
 - Production
 
 
@@ -50,5 +48,5 @@ Phundament developer documentation
 - CRUD Backend
 - Phundament Logging, Audit-Module
 - ELK-Stack
-- [Troubleshooting](60-troubleshooting.md)
+- [Troubleshooting](6-tutorials/troubleshooting.md)
 
