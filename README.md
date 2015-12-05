@@ -1,8 +1,8 @@
----
+--------
 
 **NOTE!** Docs are being refactored at the moment.
 
----
+--------
 
 Phundament developer documentation
 
