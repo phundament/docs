@@ -1,4 +1,4 @@
-Adding CRUD's based on *onebase* and the *AceEditor* in 3 different ways:
+ Adding CRUD's based on *onebase* and the *AceEditor* in 3 different ways:
 -------------------------------------------------------------------------
 
 

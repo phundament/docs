@@ -14,7 +14,7 @@ Create environment configuration file
 
 > Phundament uses a `Makefile` to execute common tasks during development. 
 > All `make` commands without a configuration target, are run on the default stack 
-> without additional `docker-compose` parameters.
+> without additional `docker-compose` parameters. Basically `make` targets are just shorthand commands.
 
 For the first initial setup run
 

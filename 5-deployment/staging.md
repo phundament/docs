@@ -19,8 +19,6 @@ Phundament supports various tools like [Docker](https://www.docker.com), [Vagran
 
 ### Local development
 
-> **Heads up!** This section uses [doma](https://github.com/schmunk42/doma).
-
 Build assets and images
 
     make app-build-assets app-build

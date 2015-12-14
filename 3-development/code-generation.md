@@ -11,12 +11,12 @@ To kickstart you application backend create a new `crud` module with Yii's built
 > push it to your repo and install it with `composer require --prefer-source name/package`. 
 > Afterwards generate your code directly into `vendor/name/package` and use this repository for development.
 
-### Enter the CLI container
+### Enter the application container
 
 For debugging and multiple one-off commands, you can enter the CLI container with
 
 ```
-make app-bash
+make bash
 ```
 
 ### Generate module code
@@ -42,6 +42,7 @@ and add it to your application config or `src/config/local.php`
 
 ### Generate CMS/CRUD models, controllers and views 
 
+
 Create the backend CRUDs with gii and Giiant
 
 ```
@@ -59,6 +60,8 @@ Create the backend CRUDs with gii and Giiant
 
 See [Giiant documentation](https://github.com/schmunk42/yii2-giiant/blob/master/README.md) for an [example with Sakila demo database](https://github.com/schmunk42/yii2-giiant/blob/master/docs/generate-sakila-backend.md).
 
+Have also a look at [guidelines for good schema design](http://www.yiiframework.com/wiki/227/guidelines-for-good-schema-design/)
+even if it was written for Yii 1 it is still valid today. 
 
 
 HTML-Documentation

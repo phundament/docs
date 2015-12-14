@@ -4,6 +4,8 @@ Packages (Extensions)
 It is very easy to extend a Phundament-based application with existing composer packages. You can integrate any Yii2 
 extension or PHP library into Phundament 4.
 
+    make bash
+
 For a quick start, let's install a package browser and a markdown renderer module.
 
     composer require schmunk42/yii2-packaii:dev-master schmunk42/yii2-markdocs-module:@stable
