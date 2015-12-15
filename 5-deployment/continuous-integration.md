@@ -1,5 +1,14 @@
 
 
+Gitlab CI
+
+- build
+- test
+- report
+- deploy
+- cleanup
+
+
 
 #### Building the `:production` image
 

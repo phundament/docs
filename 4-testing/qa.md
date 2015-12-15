@@ -30,4 +30,14 @@ Login page
     make docker-run SERVICE=validator CMD=http://WEB/user/login
 
 
+Lint
+----
+    
+https://github.com/redcoolbeans/dockerlint
+    
+    docker run -it --rm -v "$PWD/$(DOCKERFILE)":/Dockerfile:ro redcoolbeans/dockerlint
+    
+https://github.com/projectatomic/dockerfile_lint
+    
+    docker run -it --rm --privileged -v `pwd`:/root/ projectatomic/dockerfile-lint dockerfile_lint -f $(DOCKERFILE)
     
