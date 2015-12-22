@@ -19,34 +19,31 @@ Phundament developer documentation
 
 - [Installation](2-setup/installation.md)
 - [Configuration](2-setup/configuration.md)
-- [Backend]
- - [Users and permissions](2-setup/user-permissions.md)
- - [Settings](2-setup/settings.md)
+- [Users and permissions](2-setup/user-permissions.md)
+- [Settings](2-setup/settings.md)
 
 ### Development
 
-- [Frontend]
-- [Code-generation]
-- [Extensions]
-- [CLI Tools]
+- [CLI tools](3-development/cli-tools.md)
+- [Backend](3-development/backend.md)
+- [Frontend](3-development/frontend.md)
+- [Code-generation](3-development/code-generation.md)
+- [Extensions](3-development/extensions.md)
 
 ### Testing
 
-- [Local testing with Codeception]
-- [Continous Integration]
-- [QA]
+- [Local testing with Codeception](4-testing/testing.md)
+- [QA](4-testing/testing.md)
 
 ### Deployment
 
-- [Build]
-- [Staging]
-- Production
+- [Continous Integration](5-deployment/continuous-integration.md)
+- [Staging](5-deployment/staging.md)
+- [Production](5-deployment/production.md)
 
 ### Tutorials
 
-- Asset Compression
-- CRUD Backend
-- Phundament Logging, Audit-Module
-- ELK-Stack
 - [Troubleshooting](6-tutorials/troubleshooting.md)
+
+[More tutorials](6-tutorials/) including asset compression, CRUD backend code-generation, logging, audit, ...
 
