@@ -1,5 +1,5 @@
-Customize
-=========
+Frontend
+========
 
 Let's get your hands on your newly created application.
 

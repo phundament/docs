@@ -1,4 +1,4 @@
-Code Generation
+Code-generation
 ===============
 
 Backend CMS/CRUD module

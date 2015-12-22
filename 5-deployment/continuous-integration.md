@@ -1,6 +1,7 @@
+Continuous integration
+======================
 
-
-Gitlab CI
+Example: Gitlab CI
 
 - build
 - test

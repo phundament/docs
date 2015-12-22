@@ -1,12 +1,7 @@
-Deployment
-==========
-
 Staging
--------
+=======
 
 AWS Server
-
-
 
 
 Staging
