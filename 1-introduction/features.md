@@ -6,7 +6,8 @@ Features
 
 - minimalistic, environment variables based configuration
 - Docker support, runs on *PHP* 5 or 7
-- Support for efficient building and testing on *GitLab CI*  
+- Support for efficient building and testing on *GitLab CI*
+- using stable PHP package versions, embracing semver
 
 ### Frontend
 
@@ -33,7 +34,15 @@ Features
 
 ### Docker images
 
+- composer
+- asset-plugin
+- codeception
 - include composer caches for quick builds
 - LESS-compiler and closure-compiler on PHP-CLI and PHP-FPM for seamless integration with Yii 2.0 Framework asset-bundles 
 - xDebug
-- APCu support 
+- APCu support
+- npm 
+
+### Extras
+
+- shell file linting

@@ -26,8 +26,18 @@ If you're experiencing slow updates, check what's going on in detail with
 
     composer -vvv update
 
+### Can't use `@dev` or `dev-master` packages
+
+You need to use https://getcomposer.org/doc/articles/aliases.md, see also https://github.com/dmstr/yii2-cms-metapackage/issues/1
+
 
 ## Docker
+
+#### Port is already allocated
+
+    ERROR: Cannot start container 88b754d7e46aca58961ef0a049216f0e7331e35ba905d84fab01016a4797a779: failed to create endpoint appdev_mariadb_1 on network bridge: Bind for 0.0.0.0:43306 failed: port is already allocated
+
+Change your port mapping.
 
 #### Can't push to private registry
 

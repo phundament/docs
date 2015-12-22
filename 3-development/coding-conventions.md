@@ -46,6 +46,7 @@
 
 ## CSS
 - SHOULD use hyphens for CSS classes and ID's i.e. `.my-class` and `#my-id`
+- https://github.com/CSSLint/csslint/wiki/disallow-ids-in-selectors
 
 ## JavaScript
 

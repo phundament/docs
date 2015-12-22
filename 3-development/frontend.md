@@ -3,6 +3,19 @@ Customize
 
 Let's get your hands on your newly created application.
 
+`SettingsAsset`
+---------------
+
+`app.assets` `useSettingsAsset` `1` 
+
+`app.less` `main`
+
+```
+BODY {
+ background: #ccc;
+}
+```
+
 Frontend Assets
 ---------------
 

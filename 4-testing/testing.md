@@ -20,7 +20,13 @@ Bootstrap Codeception
    make TEST app-setup APP_MIGRATION_LOOKUP='@ext/onebase/core/migrations/data'
    
    
+### Functional vs. acceptance tests
    
+Functional only basic tests, see codeception.com
+   
+Login, JavaScript, Cookies, Session, ... use acceptance tests.
+   
+`wait(1)`, `waitForElement(1)`   
    
    
 Testing
