@@ -33,7 +33,7 @@ Phundament developer documentation
 ### Testing
 
 - [Local testing with Codeception](4-testing/testing.md)
-- [QA](4-testing/testing.md)
+- [QA](4-testing/qa.md)
 
 ### Deployment
 
@@ -45,5 +45,5 @@ Phundament developer documentation
 
 - [Troubleshooting](6-tutorials/troubleshooting.md)
 
-[More tutorials](6-tutorials/) including asset compression, CRUD backend code-generation, logging, audit, ...
+[More tutorials](https://github.com/phundament/docs/tree/master/6-tutorials) including asset compression, CRUD backend code-generation, logging, audit, ...
 
