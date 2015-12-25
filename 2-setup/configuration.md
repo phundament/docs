@@ -11,7 +11,7 @@ The Phundament config structure is straight forward, there are just two config f
 Phundament uses an environment variables based configuration, see also [Dev/prod parity](http://12factor.net/dev-prod-parity) for more information about this topic.
 
 > `.env` or `.env-dist` files can be adjusted to reflect basic application settings, but we strongly
-> recommend to **not add secrets** like passwords or tokens to the repository. 
+> recommend **not to add secrets** like passwords or tokens to the repository. 
 
 ### Hierachy
 

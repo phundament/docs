@@ -19,7 +19,6 @@ Phundament developer documentation
 - [CLI tools](3-development/cli-tools.md)
 - [Backend](3-development/backend.md)
 - [Frontend](3-development/frontend.md)
-- [Code-generation](3-development/code-generation.md)
 - [Extensions](3-development/extensions.md)
 
 ### Testing
@@ -36,6 +35,7 @@ Phundament developer documentation
 ### Tutorials
 
 - [Troubleshooting](6-tutorials/troubleshooting.md)
+- [Code-generation](6-tutorials/code-generation.md)
 
 [More tutorials](https://github.com/phundament/docs/tree/master/6-tutorials) including asset compression, CRUD backend code-generation, logging, audit, ...
 
