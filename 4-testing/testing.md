@@ -1,6 +1,33 @@
 Testing
 =======
 
+
+
+### With `make`
+
+Or one-by-one via `Makefile` targets, make sure to build first, if you have made changes to `src`
+
+    make build
+    
+Start the test stack    
+    
+    make TEST setup up 
+
+Enter the `tester` container    
+    
+    make TEST bash
+
+Run codeception directly *(container bash)*
+
+    $ codecept run acceptance allow_fail
+
+Or run the test suites from build scripts
+
+    $ sh build/scripts/build.sh
+    $ sh build/scripts/test.sh
+
+
+
 Bootstrap Codeception
 ---------------------
 

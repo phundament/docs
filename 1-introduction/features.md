@@ -7,6 +7,7 @@ Features
 - Docker support, runs on *PHP* 5 or 7
 - Support for efficient building and testing on *GitLab CI*
 - using stable PHP package versions, embracing semver
+- continuous integration support
 
 ### Frontend
 

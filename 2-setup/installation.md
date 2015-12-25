@@ -1,20 +1,19 @@
 Installation
 ============
 
-> Note: You can run Phundament also by installing it with [composer](http://getcomposer.org/doc/00-intro.md#installation-nix) or within a Vagrant VM. But we recommend docker, since it provides a consistent environment
+> Note: Examples in this guide are run in the dockerized setup. 
+> You can run Phundament also  with [composer](http://getcomposer.org/doc/00-intro.md#installation-nix) 
+> or within a Vagrant VM. 
 
-Clone the repository and go to the application directory
+Phundament uses `Makefile`s to execute common tasks during development. 
+All `make` commands without a *configuration target*, like `TEST` or `STAGING` are run on the default stack 
+without additional `docker-compose` parameters. 
 
-    git clone https://github.com/phundament/app
+Basically, `make` targets are just shorthands for lengthy Docker commands.
 
-Create environment configuration file
+To see all available targets run
 
-    cd app
-    cp .env-dist .env
-
-> Phundament uses a `Makefile` to execute common tasks during development. 
-> All `make` commands without a configuration target, are run on the default stack 
-> without additional `docker-compose` parameters. Basically `make` targets are just shorthand commands.
+    make help
 
 For the first initial setup run
 
@@ -22,13 +21,8 @@ For the first initial setup run
 
 You can also chain single commands
 
-    make up setup open
+    make setup up open bash
    
-Or use configuration targets for compose stacks
+Or use a configuration target, in example for managing an isolated test-stack
    
-    make TEST all
-    
-    make TEST run-tests
-
-
-
+    make TEST bash

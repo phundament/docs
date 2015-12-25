@@ -8,8 +8,7 @@ The Phundament config structure is straight forward, there are just two config f
  - [`.env`](https://github.com/phundament/app/blob/master/.env-dist) - environment dependend configuration
  - [`config/main.php`](https://github.com/phundament/app/blob/master/config/main.php) - application configuration
 
-Compared to `yii2-app-basic` and `yii2-app-advanced` Phundament uses an environment variables based configuration instead
-of an `init` script. See also [Dev/prod parity](http://12factor.net/dev-prod-parity) for more information about this topic.
+Phundament uses an environment variables based configuration, see also [Dev/prod parity](http://12factor.net/dev-prod-parity) for more information about this topic.
 
 > `.env` or `.env-dist` files can be adjusted to reflect basic application settings, but we strongly
 > recommend to **not add secrets** like passwords or tokens to the repository. 
@@ -40,7 +39,3 @@ Lookup paths for migrations can be defined in application configuration, for det
             '@bedezign/yii2/audit/migrations'
         ]
     ]
- 
----
-
-*Continue to [Customization](30-customize.md)*

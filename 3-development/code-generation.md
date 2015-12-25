@@ -40,6 +40,11 @@ and add it to your application config or `src/config/local.php`
 ]
 ```
 
+### Create migrations
+
+	yii migrate/create nanocms --migrationPath=modules/nanocms
+
+
 ### Generate CMS/CRUD models, controllers and views 
 
 
@@ -49,9 +54,8 @@ Create the backend CRUDs with gii and Giiant
 ./yii giiant-batch \
   --interactive=0 \
   --overwrite=1 \
-  --modelDb=dbSakila \
-  --modelBaseClass=app\\models\\SakilaActiveRecord \
-  --modelNamespace=app\\models\\sakila \
+  --modelDb=db \
+  --modelNamespace=app\\modules\\crud\\models\\sakila \
   --crudControllerNamespace=app\\modules\\crud\\controllers \
   --crudViewPath=@app/modules/crud/views \
   --crudPathPrefix= \

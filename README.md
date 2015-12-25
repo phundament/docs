@@ -1,17 +1,9 @@
----
- 
-:warning: Docs are being refactored at the moment.
-
----
-
-
 Phundament developer documentation
 
 ### Introduction
 
 - [About](1-introduction/about.md)
 - [Basic concepts](1-introduction/basic-concepts.md)
-- [Requirements](1-introduction/requirements.md)
 - [Features](1-introduction/features.md)
 - [Links](1-introduction/links.md)
 
@@ -32,12 +24,12 @@ Phundament developer documentation
 
 ### Testing
 
-- [Local testing with Codeception](4-testing/testing.md)
+- [Local testing](4-testing/testing.md)
 - [QA](4-testing/qa.md)
 
 ### Deployment
 
-- [Continous Integration](5-deployment/continuous-integration.md)
+- [Continous integration](5-deployment/continuous-integration.md)
 - [Staging](5-deployment/staging.md)
 - [Production](5-deployment/production.md)
 
