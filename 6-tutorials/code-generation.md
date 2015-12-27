@@ -64,6 +64,7 @@ Create the backend CRUDs with gii and Giiant
       --modelDb=db \
       --modelNamespace=app\\modules\\cms\\models \
       --modelQueryNamespace=app\\modules\\cms\\models\\query \
+      --crudAccessFilter=1 \
       --crudControllerNamespace=app\\modules\\cms\\controllers \
       --crudSearchModelNamespace=app\\modules\\cms\\models\\search \
       --crudViewPath=@app/modules/cms/views \

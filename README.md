@@ -11,8 +11,6 @@ Phundament developer documentation
 
 - [Installation](2-setup/installation.md)
 - [Configuration](2-setup/configuration.md)
-- [Users and permissions](2-setup/user-permissions.md)
-- [Settings](2-setup/settings.md)
 
 ### Development
 

@@ -21,11 +21,6 @@ Run codeception directly *(container bash)*
 
     $ codecept run acceptance allow_fail
 
-Or run the test suites from build scripts
-
-    $ sh build/scripts/build.sh
-    $ sh build/scripts/test.sh
-
 
 
 Bootstrap Codeception

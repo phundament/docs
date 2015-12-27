@@ -4,6 +4,8 @@ HTML-Documentation
 
 Generate application documentation
 
-```
-make app-docs
-```
+    make bash
+
+
+    $ apidoc api src
+    $ apidoc guide docs

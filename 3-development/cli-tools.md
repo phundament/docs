@@ -10,6 +10,10 @@ On your host-system:
 
 Inside the PHP container:
 
+    make bash
+    
+    docker-compose run php bash
+
 - composer
 - yii
 - codecept

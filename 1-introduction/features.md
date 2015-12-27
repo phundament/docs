@@ -37,7 +37,7 @@ Features
 - composer
 - asset-plugin
 - codeception
-- include composer caches for quick builds
+- fast builds through optimized Docker image layers and composer caches
 - LESS-compiler and closure-compiler on PHP-CLI and PHP-FPM for seamless integration with Yii 2.0 Framework asset-bundles 
 - xDebug
 - APCu support
