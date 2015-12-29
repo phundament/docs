@@ -1,5 +1,3 @@
-Phundament developer documentation
-
 ### Introduction
 
 - [About](1-introduction/about.md)
