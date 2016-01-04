@@ -37,12 +37,13 @@ Bootstrap Codeception
     
 ### Running test suites    
 
+From a different location
 
-   make TEST app-run-tests OPTS='-c src/extensions/hrzg/resque-tests'
+    make TEST app-run-tests OPTS='-c src/extensions/hrzg/resque-tests'
 
+With additional migrations
    
-   
-   make TEST app-setup APP_MIGRATION_LOOKUP='@ext/onebase/core/migrations/data'
+    make TEST app-setup APP_MIGRATION_LOOKUP='@ext/onebase/core/migrations/data'
    
    
 ### Functional vs. acceptance tests
