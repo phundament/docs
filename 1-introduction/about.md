@@ -10,7 +10,7 @@ Phundament is a template for web applications built upon Docker, PHP and Yii Fra
 Design goals
 -----------------
 
-The goal of Phundament is to provide a consistent and rock-solid base for integrating the best tools, libraries and plugins, while not creating a new framework or [another competing standard](http://xkcd.com/927/). 
+The goal of Phundament is to provide a consistent and rock-solid base for integrating the best tools, libraries and plugins available in the Docker, PHP and Yii 2.0 ecosystems, while not creating a new framework or [another competing standard](http://xkcd.com/927/). 
 
 Its goal is to provide a complete build, test and deployment environment for dockerized applications, defined in `docker-compose` YAML files - which we call stacks.
 

@@ -3,27 +3,29 @@ Configuration
 
 ## Environment & application
 
-The Phundament config structure is straight forward, there are just two config files for an application:
+Phundament uses an environment variables based configuration, see also [Dev/prod parity](http://12factor.net/dev-prod-parity) for more information about this topic.
+
+You find the config files for an application in `src/config`:
 
  - [`.env`](https://github.com/phundament/app/blob/master/.env-dist) - environment dependend configuration
  - [`config/main.php`](https://github.com/phundament/app/blob/master/config/main.php) - application configuration
+ - [`config/local.php`](https://github.com/phundament/app/blob/master/config/main.php) - application configuration overrides
 
-Phundament uses an environment variables based configuration, see also [Dev/prod parity](http://12factor.net/dev-prod-parity) for more information about this topic.
-
-> `.env` or `.env-dist` files can be adjusted to reflect basic application settings, but we strongly
+> `.env-dist` can be adjusted to reflect basic application settings, but we strongly
 > recommend **not to add secrets** like passwords or tokens to the repository. 
+
 
 ### Hierachy
 
 From highest to lowest priority. ENV variable are immutable by default, so if a value is set in a `Dockerfile`, you can not
  overwrite it in your `.env` file, but in `docker-compose.yml`
 
-1. `docker-compose.yml`
-2. `docker-compose_env-file`
+1. `docker-compose.override.yml`
+2. `docker-compose.yml`
 3. `Dockerfile`
 4. `.env`
 
-> Note! While in Yii configuration files the last value takes precedence, because they are based on PHP arrays and merged 
+> :exclamation: While in Yii configuration files the last value takes precedence, because they are based on PHP arrays and merged 
 > together, ENV variables are immutable by default.
 
 

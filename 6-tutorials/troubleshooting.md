@@ -9,7 +9,7 @@ For more frequently asked questions (FAQ) see [GitHub](https://github.com/phunda
 
 **Solution** Set `YII_ENV=dev` which is the variable responsible for the debug toolbar.
 
-#### A
+#### AssetManager warning
 
 ```
 PHP Warning – yii\base\ErrorException
@@ -71,6 +71,9 @@ See https://github.com/chadoe/docker-cleanup-volumes
     ERROR: Service 'php' failed to build: Network timed out while trying to connect to https://index.docker.io/v1/repositories/phundament/php-one/images. You may want to check your internet connection or if you are behind a proxy.
     make: *** [build] Error 1
 
+#### MySQL connection takes more than 5 seconds
+
+Check your DNS settings, restart VM with `docker-machine`.
 
 ## Vagrant
 
