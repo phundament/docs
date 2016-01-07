@@ -1,24 +1,26 @@
 About
 =====
 
-[![Build Status](https://travis-ci.org/phundament/app.svg?branch=master)](https://travis-ci.org/phundament/app)
-[![Total Downloads](https://poser.pugx.org/phundament/app/downloads.png)](https://packagist.org/packages/phundament/app)
-[![Latest Stable Version](https://poser.pugx.org/phundament/app/v/stable.png)](https://packagist.org/packages/phundament/app)
+> :bangbang: We're about to rename and move some repos in the near future, your existing projects should not be affected by these changes.
 
-Phundament is a template for web applications built upon Docker, PHP and Yii Framework 2.0.
+## Manifesto
 
-Design goals
------------------
+**phd** is a holistic web-application template implementation, aiming on flexibility, modularization, performance and security on a minimal codebase.
 
-The goal of Phundament is to provide a consistent and rock-solid base for integrating the best tools, libraries and plugins available in the Docker, PHP and Yii 2.0 ecosystems, while not creating a new framework or [another competing standard](http://xkcd.com/927/). 
+It embraces a complete application life-cycle, from initial development over testing and CI to deployment.
 
-Its goal is to provide a complete build, test and deployment environment for dockerized applications, defined in `docker-compose` YAML files - which we call stacks.
+Its toolset is infrastructure-agnostic and can be run on various platforms, such as Linux, OS X, Windows, AWS and other PaaS and cloud providers.
 
-Whenever possible, existing tools are pre-configured in a clean and easy way and built on Docker images to ensure 100% compatibility across different platforms.
+The standard modules are content-agnostic and include environment-based configuration, authentication & authorization, build-automation, testing, i18n, key/value-store, code-generation (Models/DAO, REST/API), prototyping and semantic-versioning.
 
-It follows the [12factor specifications](http://12factor.net) on a very slim codebase.
+The application is built upon Docker, PHP and Yii 2.0 Framework and composer packages. Whenever possible phd uses a stable version for images and libraries. It is designed to be able to use an immensely wide set of libraries.
+
+Packages, plugins, extensions and libraries are hand-picked by core-developers, focussing on maintainability of the whole application stack, while it also follows the [12factor specifications](http://12factor.net).
 
 
+Production ready and industrial grade delivery, with regular updates ensured through automated build processes. - **phd** is built, developed and maintained by dmstr. 
+
+- - -
 
 Branches
 --------
