@@ -81,7 +81,8 @@ If you are developing packages for a private repository you can enable your pack
 ```
 
 > You should use the git protocol when using private repositories in conjunction with private-public-key authentication when
-> deploying remotely or in a virtualized environment.
+> deploying remotely or in a virtualized environment. You can add `container-files` like `.ssh/known_hosts` or `.gitconfig` in the 
+> `Dockerfile`
 
 #### Public packages
 
@@ -112,20 +113,3 @@ You can also use the Gii web-interface and your favorite Git UI client to accomp
 - Click generate
 - Create Git repo, commit and push to repository
 - Require via `composer`
-
----
-
-Use Yii Framework 2.0 Development Repo
---------------------------------------
-
-Change the extension `yiisoft/yii2` to `yiisoft/yii2-dev` in `composer.json`.
-
-Run `composer update` to grab the development repo.
-
-Re-create the orginal framwork folder and link the framework into it.
-
-```
-mkdir vendor/yiisoft/yii2
-cd vendor/yiisoft/yii2
-ln -s ../yii2-dev/framework/Yii.php .
-```

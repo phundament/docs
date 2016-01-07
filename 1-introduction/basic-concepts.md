@@ -49,22 +49,42 @@ Docker is the container-engine in which all services and tools are run, this ens
 
 - [View build tools](https://github.com/phundament/app/tree/master/build)
 
-Directory Structure
+Directories & files
 -------------------
 
+Build support
 ```
 Makefile            build and Docker stack control-targets
+build/              files for Docker build tasks
+```
+
+Docker & docker-compose
+```
 docker-compose.yml  docker container setup
 Dockerfile          docker image build information
-composer.json       application packages
-codeception.yml     test-suite configuration
+```
 
-build/              files for Docker build tasks
-docs/               application documentation (markdown)
-runtime/            files generated during runtime
+Application source
+```
 src/                application source-code
-tests/              various tests for objects that are common among applications
+```
+
+Application packages
+```
+composer.json       application packages
+composer.lock       application packages (locked revisions)
 vendor/             dependent 3rd-party packages
+```
+
+Application runtime (non-persistent data)
+```
+runtime/            files generated during runtime
+```
+
+Testing
+```
+codeception.yml     test-suite configuration
+tests/              various tests for objects that are common among applications
 ```
 
 ### src/
