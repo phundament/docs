@@ -7,9 +7,10 @@ Only users with permission `backend_default` can access the backend dashboard.
 
 ### Access restricitions
 
-By default all controllers of the application are only accessible to the `admin` user.
+> :bangbang: By default all controllers of the application are only accessible to the `admin` user.
 
-:bangbang: You can make a page or controller publicly available, when you add the corresponding permission to the `Public` role.
+You can make a page or controller publicly available, when you add the corresponding permission to the `Public` role.
+It is recommended to setup an user with role `Editor` for managing the contents in the backend.
 
 ### Language Selection
 

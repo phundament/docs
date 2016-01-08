@@ -28,3 +28,10 @@ Prototyping module
 
 This module has very limited features and has been mainly developed to create tiny static sites. It basically allows
 you to add HTML and LESS files to your site. 
+
+### LESS
+
+- go to `/prototype/less`
+- create key `main`
+ - add example LESS content
+- save

@@ -24,9 +24,10 @@ You can create a container bash with
 or    
     
     docker-compose run php bash
-    
+
 or
 
     docker exec -it app_php_1 bash
 
+> If a line in the documentation is prefixed with `$` it means that this command needs to be run inside the container.
 
