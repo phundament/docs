@@ -16,7 +16,7 @@ To add a new module to your application backend create a `prototype` module with
 
 For debugging and multiple one-off commands, you can enter the CLI container with
 
-    make bash
+    docker-compose run --rm php bash
 
 ### Generate module code
 
@@ -37,7 +37,7 @@ and add it to your application config or `src/config/local.php`
 
 ### Create migrations
 
-	yii migrate/create init --migrationPath=@app/modules/prototype/migrations
+	$ yii migrate/create init --migrationPath=@app/modules/prototype/migrations
 
 Add migration to application params
 
@@ -50,7 +50,7 @@ Add migration to application params
 
 And run the migrations
     
-    yii migrate
+    $ yii migrate
 
 
 ### Generate CRUDs with giiant 

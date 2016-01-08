@@ -18,12 +18,15 @@ You find the config files for an application in `src/config`:
 ### Hierachy
 
 From highest to lowest priority. ENV variable are immutable by default, so if a value is set in a `Dockerfile`, you can not
- overwrite it in your `.env` file, but in `docker-compose.yml`
+ overwrite it in your `.env` file, but in `docker-compose.yml`.
 
 1. `docker-compose.override.yml`
 2. `docker-compose.yml`
 3. `Dockerfile`
 4. `.env`
+
+Only values in `.env` can be changed while the containers are running. If you change environment variables in 
+`docker-compose.yml` you need to restart your containers.  
 
 > :exclamation: While in Yii configuration files the last value takes precedence, because they are based on PHP arrays and merged 
 > together, ENV variables are immutable by default.

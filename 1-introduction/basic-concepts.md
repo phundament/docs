@@ -66,7 +66,9 @@ Dockerfile          docker image build information
 
 Application source
 ```
+.env                environment config
 src/                application source-code
+yii                 application CLI
 ```
 
 Application packages
@@ -90,10 +92,8 @@ tests/              various tests for objects that are common among applications
 ### src/
 
 ```
-yii                 application CLI
-
 assets/             application assets such as JavaScript and CSS
-.env, config/       application configuration
+config/       application configuration
 controllers/        web-controller classes
 commands/           console controller classes
 models/             application model classes
