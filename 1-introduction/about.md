@@ -11,7 +11,7 @@ It embraces a complete application life-cycle, from initial development over tes
 
 Its toolset is infrastructure-agnostic and can be run on various platforms, such as Linux, OS X, Windows, AWS and other PaaS and cloud providers.
 
-The standard modules are content-agnostic and include environment-based configuration, authentication & authorization, build-automation, testing, i18n, key/value-store, code-generation (Models/DAO, REST/API), prototyping and semantic-versioning.
+The standard modules are content-agnostic and include environment-based configuration, authentication and authorization, build-automation, testing, i18n, key/value-store, code-generation (Models/DAO, REST/API), prototyping and semantic-versioning.
 
 The application is built upon Docker, PHP and Yii 2.0 Framework and composer packages. Whenever possible phd uses a stable version for images and libraries. It is designed to be able to use an immensely wide set of libraries.
 

@@ -53,18 +53,21 @@ Directories & files
 -------------------
 
 Build support
+
 ```
 Makefile            build and Docker stack control-targets
 build/              files for Docker build tasks
 ```
 
 Docker & docker-compose
+
 ```
 docker-compose.yml  docker container setup
 Dockerfile          docker image build information
 ```
 
 Application source
+
 ```
 .env                environment config
 src/                application source-code
@@ -72,6 +75,7 @@ yii                 application CLI
 ```
 
 Application packages
+
 ```
 composer.json       application packages
 composer.lock       application packages (locked revisions)
@@ -79,11 +83,13 @@ vendor/             dependent 3rd-party packages
 ```
 
 Application runtime (non-persistent data)
+
 ```
 runtime/            files generated during runtime
 ```
 
 Testing
+
 ```
 codeception.yml     test-suite configuration
 tests/              various tests for objects that are common among applications
