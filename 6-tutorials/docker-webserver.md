@@ -38,6 +38,20 @@ Add these updated configuration files to the build process
 You can then `docker build` the image like described above.
 
 
+#### Serve static files from PHP-fpm
+
+Although it is strongly recommended to serve static files from nginx, there are use-cases when you need to generate
+these files in on your PHP container.
+
+To forward requests from nginx to PHP, just for `/assets`
+
+    location /assets {
+        # Fallback only
+        try_files $uri $uri/ /asset.php?uri=$uri;
+    }
+
+On your PHP container create an `asset.php` file which serves your static files, make sure not to expose any sensitive
+information.
 
 
 

@@ -85,3 +85,9 @@ See `modules/prototype/widgets/ViewWidget.php`
 ### Create asset bundle for LESS from the database
 
 See `modules/prototype/assets/PrototypeAsset.php`
+
+
+### Create additional controllers
+
+    yii gii/controller --controllerClass=modules\\frontend\\controllers\\MyController --viewPath=@modules/frontend/views/my
+
