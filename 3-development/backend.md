@@ -12,6 +12,9 @@ Only users with permission `backend_default` can access the backend dashboard.
 You can make a page or controller publicly available, when you add the corresponding permission to the `Public` role.
 It is recommended to setup an user with role `Editor` for managing the contents in the backend.
 
+User authentication and authorization is provides by the extension `dektrium/yii2-user`, you can find its 
+[documentation](https://github.com/dektrium/yii2-user/blob/master/docs/README.md) on GitHub.
+
 ### Language Selection
 
 You can switch the application language by choosing another language under the flag icon on the top right menu bar.
