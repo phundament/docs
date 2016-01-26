@@ -52,11 +52,12 @@ Docker is the container-engine in which all services and tools are run, this ens
 Directories & files
 -------------------
 
-Build support
+Application source
 
 ```
-Makefile            build and Docker stack control-targets
-build/              files for Docker build tasks
+.env                environment config
+src/                application source-code
+yii                 application CLI
 ```
 
 Docker & docker-compose
@@ -66,21 +67,13 @@ docker-compose.yml  docker container setup
 Dockerfile          docker image build information
 ```
 
-Application source
+Build support
 
 ```
-.env                environment config
-src/                application source-code
-yii                 application CLI
+Makefile            build and Docker stack control-targets
+build/              files for Docker build tasks
 ```
 
-Application packages
-
-```
-composer.json       application packages
-composer.lock       application packages (locked revisions)
-vendor/             dependent 3rd-party packages
-```
 
 Application runtime (non-persistent data)
 
