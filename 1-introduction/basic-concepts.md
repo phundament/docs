@@ -52,12 +52,6 @@ Docker is the container-engine in which all services and tools are run, this ens
 Directories & files
 -------------------
 
-Build support
-
-```
-Makefile            build and Docker stack control-targets
-build/              files for Docker build tasks
-```
 
 Docker & docker-compose
 
@@ -72,20 +66,14 @@ Application source
 .env                environment config
 src/                application source-code
 yii                 application CLI
-```
-
-Application packages
-
-```
-composer.json       application packages
-composer.lock       application packages (locked revisions)
-vendor/             dependent 3rd-party packages
-```
-
-Application runtime (non-persistent data)
-
-```
 runtime/            files generated during runtime
+```
+
+Build support
+
+```
+Makefile            build and Docker stack control-targets
+build/              files for Docker build tasks
 ```
 
 Testing
@@ -99,7 +87,7 @@ tests/              various tests for objects that are common among applications
 
 ```
 assets/             application assets such as JavaScript and CSS
-config/       application configuration
+config/             application configuration
 controllers/        web-controller classes
 commands/           console controller classes
 models/             application model classes
