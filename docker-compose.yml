@@ -1,0 +1,5 @@
+write-good:
+  build: .
+  command: "sh -c 'cd /app && write-good */*.md'"
+  volumes:
+    - ./:/app

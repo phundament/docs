@@ -1,0 +1,3 @@
+lint:
+  script:
+    - docker-compose run write-good
