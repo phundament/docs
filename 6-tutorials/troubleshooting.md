@@ -3,7 +3,8 @@ Troubleshooting
 
 For more frequently asked questions (FAQ) see [GitHub](https://github.com/phundament/app/issues) and [Stackoverflow](http://stackoverflow.com/questions/tagged/phundament)
 
-## Yii
+Yii
+---
 
 #### Debug toolbar visible with `YII_DEBUG=0`
 
@@ -17,21 +18,27 @@ PHP Warning – yii\base\ErrorException
 Cannot use a scalar value as an array
 1. in /app/vendor/yiisoft/yii2/web/AssetManager.php
 ```
-
+:warning:
 **Fix** Check your application for missing asset files or configuration.
 
 ## composer
+
+#### Slow or hanging updates
 
 If you're experiencing slow updates, check what's going on in detail with
 
     composer -vvv update
 
-### Can't use `@dev` or `dev-master` packages
+#### Can't use `@dev` or `dev-master` packages
 
 You need to use https://getcomposer.org/doc/articles/aliases.md, see also https://github.com/dmstr/yii2-cms-metapackage/issues/1
 
 
-## Docker
+
+
+Docker
+------
+
 
 #### Port is already allocated
 
@@ -75,45 +82,39 @@ See https://github.com/chadoe/docker-cleanup-volumes
 
 Check your DNS settings, restart VM with `docker-machine`.
 
-## Vagrant
 
-#### `vagrant up db`
+#### Docker daemon does not restart (>=1.9)
+
+Error description
+
+    docker@dev5:~$ tail -f /var/log/docker.log 
+    
+    [...]
+    
+    time="2016-02-03T09:18:59.567541148Z" level=fatal msg="Error starting daemon: Error initializing network controller: could not delete the default bridge network: network bridge has active endpoints" 
+
+Remove stale network files    
+    
+    docker@dev5:~$ sudo rm -rf /var/lib/docker/network/files
+    docker@dev5:~$ sudo /etc/init.d/docker restart
+    Need TLS certs for dev5,127.0.0.1,10.0.2.15,192.168.99.100
+    -------------------
+    docker@dev5:~$ docker ps
+
+
+#### Cleanup volumes
+
+see https://github.com/chadoe/docker-cleanup-volumes 
+
+#### Cleanup images and containers
 
 ```
-Command: "docker" "ps" "-a" "-q" "--no-trunc"
+docker run \
+	-it \
+	-v /var/run/docker.sock:/var/run/docker.sock \
+	yelp/docker-custodian \
+		dcgc --max-image-age=30d --max-container-age=1d --dry-run
 ```
-
-Just run it one more time.
-
-#### `vagrant up db` fails second time
-
-```
-Command: "docker" "run" "--name" "db" "-d" "-e" "MYSQL_ROOT_PASSWORD=secretroot" "-e" "MYSQL_USER=dev" "-e" "MYSQL_PASSWORD=dev-123" "-e" "MYSQL_DATABASE=myapp-vagrant" "-p" "3306:3306" "-v" "/var/lib/docker/docker_1424995498_65018:/vagrant" "mysql"
-
-Stderr: Unable to find image 'mysql:latest' locally
-Pulling repository mysql
-time="2015-02-27T00:09:38Z" level="fatal" msg="Get https://index.docker.io/v1/repositories/library/mysql/images: dial tcp: lookup index.docker.io on 10.0.2.3:53: server misbehaving" 
-```
-
-Fix nameservers in `/etc/resolv.conf` in dockerhost VM.
-
-#### `vagrant destroy web` fails with error message.
- 
-> TODO link to GitHub issue
-
-
-Troubleshooting
-===============
-
-Docker
-------
-
-
-### General
-
-#### Cleanup images
-
-see https://github.com/chadoe/docker-cleanup-volumes
 
 #### Login
 
@@ -130,25 +131,6 @@ Login docker-compose 1.2.0
     docker login --username=dmstr --password=$TUTUM_PASS --email=dmstr-tutum@h17n.de https://tutum.co/v1
 
 > Note! Check if Docker saves the credentials locally.
-
-
-### Gitlab CI Server
-
-#### General
-
-In case of weird errors you have the following workaround options, which you should try from to bottom:
-
-- Retry
-- Run a clean-script from time to time.
-- Use a different `compose-project` name for the `CI` config target.
-- Clean project build folder via NAS
-- Clean project build folder via SSH to runner host and `docker exec -it runner-x bash`
-- Restart Docker daemon (`sudo service docker restart` and `docker start runner-a runner-b ...`
-- Move the project to another runner
-- Create a new runner
-- Reboot the runner-host (don't forget to bring up the runners)
-- Recreate the runner-host (**last resort**)
-
 
 ### boot2docker (local development)
 
@@ -187,11 +169,34 @@ Restart docker
     /etc/init.d/docker restart
 
 
-### Docker fixes (on dockerhost(!)
 
-	echo "54.165.225.71 tutum.co" | sudo tee -a /etc/hosts
-	echo "nameserver 8.8.4.4" | sudo tee /etc/resolv.conf
-	sudo /etc/init.d/docker restart
+
+
+## Gitlab CI Server
+
+#### General
+
+In case of weird errors you have the following workaround options, which you should try from to bottom:
+
+- Retry
+- Run a clean-script from time to time.
+- Use a different `COMPOSE_PROJECT_NAME` name for the `CI` jobs.
+- Clean project build folder via NAS
+- Clean project build folder via SSH to runner host and `docker exec -it runner-x bash`
+- Restart Docker daemon (`sudo service docker restart` and `docker start runner-a runner-b ...`
+- Move the project to another runner
+- Create a new runner
+- Reboot the runner-host (runners should have `restart=always` policy)
+- Recreate the runner-host (**last resort**)
+
+#### Pushing
+
+    $ bash build/scripts/deploy.sh
+    Username: EOF
+    
+Build variables like `REGISTRY_USER` not set.
+
+
 
 ### SSH protocol error
   
@@ -202,14 +207,3 @@ Check SSH key and correct spelling.
 > Todo: How to allow artifacts? ... cp to tmp and cp from tmp (EXPERIMENTAL!)
 
 
-
-
-### Vagrant VMs 
-
-#### Virtual machine stopped or aborted
-
-Check `dmesg`, if you find message like
-
-    [343535.486350] Out of memory: Kill process 18115 (VBoxHeadless) score 242 or sacrifice child
-    
-You may have overbooked the memory of the "bare-metal" host with VM instances.
