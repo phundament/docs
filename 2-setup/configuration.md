@@ -44,3 +44,7 @@ Lookup paths for migrations can be defined in application configuration, for det
             '@bedezign/yii2/audit/migrations'
         ]
     ]
+
+## Asset Bundles
+
+See tutorial about [asset compression](../6-tutorials/asset-compression.md).
