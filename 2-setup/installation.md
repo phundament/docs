@@ -2,8 +2,8 @@ Installation
 ============
 
 > Note: Examples in this guide are run in the dockerized setup. 
-> You can run Phundament also  with [composer](http://getcomposer.org/doc/00-intro.md#installation-nix) 
-> or within a Vagrant VM. 
+> You can run Phundament also  with [composer](../6-tutorials/installation-composer.md) 
+> for example within a Vagrant VM. 
 
 Phundament uses `Makefile`s to execute common tasks during development. 
 All `make` commands without a *configuration target*, like `TEST` or `STAGING` are run on the default stack 
