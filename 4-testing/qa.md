@@ -26,6 +26,10 @@ HTML-Validator
 
 Index page
 
+    docker run --entrypoint java -jar /root/build/validator.nu/vnu.jar magnetikonline/html5validator http:://
+    
+    
+
     make docker-run SERVICE=validator CMD=http://WEB/en
 
 Login page
