@@ -12,7 +12,7 @@ Create an application bash
 
     make bash
     
-Rebuild tester classes.
+Rebuild tester classes. (YII_ENV must be set to 'test')
 
     $ codecept build
     
