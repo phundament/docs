@@ -23,8 +23,8 @@ prepared in controller actions.
 See also [Yii 2.0 Views](http://www.yiiframework.com/doc-2.0/guide-structure-views.html).
 
 
-Prototyping module
-------------------
+Module: Prototype
+--------
 
 This module has very limited features and has been mainly developed to create tiny static sites. It basically allows
 you to add HTML and LESS files to your site. 

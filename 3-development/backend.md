@@ -19,14 +19,19 @@ User authentication and authorization is provides by the extension `dektrium/yii
 
 You can switch the application language by choosing another language under the flag icon on the top right menu bar.
 
+Module: Users
+--------
 
-Settings
+Module: RBAC
+--------
+
+Module: Settings
 --------
 
 The `settings` module provides an easy to use key/value-storage.
 
 
-Pages
+Module: Pages
 -----
 
 The `pages` module is a manager for sitemap trees.
