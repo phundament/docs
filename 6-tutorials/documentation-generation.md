@@ -10,5 +10,5 @@ Enter container-bash
 
 Run docs generator
 
-    $ apidoc api src
-    $ apidoc guide docs
+    $ apidoc api src tmp/docs
+    $ apidoc guide docs tmp/docs
