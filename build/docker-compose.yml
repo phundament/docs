@@ -1,0 +1,28 @@
+version: "2"
+
+services:
+  write-good:
+    build:
+      dockerfile: Dockerfile-writegood
+      context: .
+    command: "sh -c 'cd /app && write-good */*.md'"
+    volumes:
+      - ../:/app
+
+  builder:
+    build:
+      dockerfile: Dockerfile-docs
+      context: .
+    command: bash
+    volumes:
+      - ../:/app/docs
+      - ../tmp/apidocs:/app/web/apidocs
+      - ../tmp/vendor/yiisoft:/app/vendor/yiisoft
+      - ../tmp/vendor/schmunk42:/app/vendor/schmunk42
+
+  nginx:
+    image: nginx:1.9
+    volumes:
+      - ../tmp/apidocs:/usr/share/nginx/html
+    ports:
+      - 80
