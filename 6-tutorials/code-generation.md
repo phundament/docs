@@ -71,7 +71,7 @@ Create the backend CRUDs with gii and Giiant
       --crudPathPrefix= \
       --tables=app_view,app_less
 
-See [Giiant documentation](https://github.com/schmunk42/yii2-giiant/blob/master/README.md) for an [example with Sakila demo database](https://github.com/schmunk42/yii2-giiant/blob/master/docs/generate-sakila-backend.md).
+See also [Giiant documentation](https://github.com/schmunk42/yii2-giiant/blob/master/README.md).
 
 Have also a look at [guidelines for good schema design](http://www.yiiframework.com/wiki/227/guidelines-for-good-schema-design/)
 even if it was written for Yii 1 it is still valid today. 
