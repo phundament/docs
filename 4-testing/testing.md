@@ -69,3 +69,14 @@ Re-build in container
 Run tests from a custom location *(container-bash)*  
 
     $ codecept run -c src/extensions/<MODULE_ID>
+
+
+### Grouping tests
+
+See http://codeception.com/docs/07-AdvancedUsage#Groups
+
+    // @group prod
+
+allow failure    
+    
+    // @group allow_failure

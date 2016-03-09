@@ -25,6 +25,8 @@ You can also chain single commands
    
 Or use a configuration target, in example for managing an isolated test-stack
    
-    make TEST bash
+    make TEST up setup bash
+
+You can find information in the [testing](../4-testing/testing.md) section.
 
 > :bulb: To do a dry-run for a command you can use the `-n` option, eg. `make -n all`

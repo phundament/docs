@@ -15,3 +15,16 @@ The stack also contains *Selenium* containers for acceptance testing with screen
 
 Finally it creates a screenshot of that in `tests/_output`. 
 
+
+Setup
+-----
+
+    docker-compose run phpfpm bash
+   
+    $ codecept bootstrap
+
+    $ codecept run
+
+Configuration
+-------------
+
