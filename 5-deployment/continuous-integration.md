@@ -30,7 +30,6 @@ Run the test suites from build scripts
     $ sh build/scripts/test.sh
 
 
-
 #### Building the `:production` image
 
 Adjust your `Dockerfile` and build `FROM phundament/app:production`.

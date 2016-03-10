@@ -35,7 +35,3 @@ Show installed packages
 -----------------------
 
     $ composer show --installed
-
----
-
-Continue to the [advanced development](40-develop.md) section 

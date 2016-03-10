@@ -1,17 +1,23 @@
 QA
 ==
 
+Run the following commands from a by starting the test-stack and running a `bash` in the tester container
+
+    make TEST up setup
+    make TEST bash
+
+
 Linkchecker
 -----------
 
     
-    docker run phundament/php linkchecker http://web -r 1 -F html/utf8/_output/report.html
+    $ linkchecker http://WEB -r 3
         
 
 Sitemap
     
     
-    docker run phundament/php linkchecker http://web --threads 2 --file-output sitemap -o none
+    $ linkchecker http://WEB --threads 2 --file-output sitemap -o none
         
     
     
@@ -22,19 +28,20 @@ HTML-Validator
       image: magnetikonline/html5validator
       entrypoint: ["java", "-jar", "/root/build/validator.nu/vnu.jar"]
       links:
-        - appnginx:WEB
+        - nginx:WEB
+
 
 Index page
 
-    docker run --entrypoint java -jar /root/build/validator.nu/vnu.jar magnetikonline/html5validator http:://
-    
-    
-
-    make docker-run SERVICE=validator CMD=http://WEB/en
+    docker-compose run validator http://WEB/en
 
 Login page
 
-    make docker-run SERVICE=validator CMD=http://WEB/user/login
+    docker-compose run validator http://WEB/en
+
+From bash in validator
+
+    $ java -jar validator.nu/vnu.jar
 
 
 Lint
