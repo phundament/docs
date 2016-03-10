@@ -3,10 +3,10 @@ CLI tools
 
 ### On your host-system
 
-- make
-- git
-- docker
-- docker-compose
+- `git`
+- `docker`
+- `docker-compose`
+- `make` (optional)
 
 > :information_source: Several other Linux command line tools are available.
 
