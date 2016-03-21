@@ -52,6 +52,12 @@ During **local development** it is also recommended to enable debug settings in 
 
 > :bangbang: Make sure you **do not** have these settings enabled in production deployments.
 
+You can also enable additional migrations during local development.
+
+    APP_MIGRATION_LOOKUP=@app/migrations/data
+
+> It is recommended to keep structural and data migrations separated.
+
 ### Database migrations
 
 Lookup paths for migrations can be defined in application configuration, for details see [dmstr/yii2-migrate-command](https://github.com/dmstr/yii2-migrate-command/blob/master/README.md).
