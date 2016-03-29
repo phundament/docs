@@ -11,7 +11,7 @@ and create a fresh repository from it.
     cd myapp
     git init
 
-See [tutorials](../6-tutorials/git-repository.md) for details. 
+> :bulb: It is recommended to create an initial commit from the unmodified template code, before making the first changes, see [tutorials](../6-tutorials/git-repository.md) for details.
 
 ## `make` application
 
