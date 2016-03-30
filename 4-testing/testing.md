@@ -75,8 +75,10 @@ Run tests from a custom location *(container-bash)*
 
 See http://codeception.com/docs/07-AdvancedUsage#Groups
 
-    // @group prod
+Required tests for production
 
-allow failure    
+    // @group mandatory
+
+Features or tests currently in development
     
-    // @group allow_failure
+    // @group optional
