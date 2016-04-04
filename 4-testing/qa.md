@@ -18,7 +18,14 @@ Sitemap
     
     
     $ linkchecker http://WEB --threads 2 --file-output sitemap -o none
+
+"Warm caches"
+
+:warning: Be careful with these commands, they may generate a lot of load on your server.
         
+    docker run phundament/php-one:5.6 linkchecker -t 5 -r 1 http://www.my-app.com/
+    docker run phundament/php-one:5.6 linkchecker -t 4 -r 1 http://www.my-app.com/products
+    docker run phundament/php-one:5.6 linkchecker -t 2 -r 2 http://www.my-app.com/
     
     
 HTML-Validator
