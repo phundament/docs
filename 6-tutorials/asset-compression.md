@@ -1,7 +1,7 @@
 Asset compression
 -----------------
 
-Phundament bundles the assets in the `:development` Docker container, which comes pre-installed with all required
+phd bundles the assets in the `:development` Docker container, which comes pre-installed with all required
 tools, to make use of Yii 2.0 Framework asset compresssion.
 
     docker-compose run --rm php bash

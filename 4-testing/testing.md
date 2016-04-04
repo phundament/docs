@@ -5,7 +5,7 @@ Testing
 
 Creating and running a test environment can be a cumbersome task, like executing your tests in an isolated database. 
 
-Therefore the Phundament 4 Docker images contain pre-installed Codeception binaries for running  Yii 2.0 Framework unit-, functional- and acceptance-test-suites.
+Therefore the phd 4 Docker images contain pre-installed Codeception binaries for running  Yii 2.0 Framework unit-, functional- and acceptance-test-suites.
 
 
 ### With `make`

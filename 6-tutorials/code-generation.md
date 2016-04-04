@@ -4,8 +4,8 @@ Code-generation
 Backend prototype/CRUD module
 -----------------------
 
-Phundament allows you to use you custom designed database schema as the base for CRUD admin interfaces.
-To add a new module to your application backend create a `prototype` module with Phundament and Yii's built-in tools
+phd allows you to use you custom designed database schema as the base for CRUD admin interfaces.
+To add a new module to your application backend create a `prototype` module with phd and Yii's built-in tools
 
 > If you would like to create an extension module in a composer package, please start by 
 > [creating an extension](44-extension-development.md) first.

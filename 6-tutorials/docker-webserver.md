@@ -7,7 +7,7 @@ Custom configuration `build/container-files/etc/nginx/conf.d/app.conf`.
 
 ### Customizing startup and webserver configuration
 
-You can build your custom container image on top of the [Phundament 4 Docker container](https://registry.hub.docker.com/u/phundament/app/) ([repository](https://github.com/phundament/docker)). 
+You can build your custom container image on top of the [phd 4 Docker container](https://registry.hub.docker.com/u/phundament/app/) ([repository](https://github.com/phundament/docker)). 
 Just use the `FROM` instruction in your `Dockerfile`
 
     FROM phundament/app

@@ -17,7 +17,7 @@ Extension Testing
 PHP library testing
 ===================
 
-You can use Phundament base images `phundament/php-one` for running unit tests of composer packages.
+You can use phd base images `phundament/php-one` for running unit tests of composer packages.
 
 First you need to create a `docker-compose.yml` file containing the test configuration.
 
@@ -31,7 +31,7 @@ test:
     - ./:/app
 ```
 
-We will use the Phundament image as a CLI container with composer pre-installed.
+We will use the phd image as a CLI container with composer pre-installed.
 
 By mounting the working directory into `/app`, which is the `WORKING_DIR` inside the container, we can use
 commands like `composer` or `bin/phpunit` directly.

@@ -16,7 +16,7 @@ Features
 ### Backend
 
 - AdminLTE theme
-- application backend dashboard ([screenshots](https://plus.google.com/+Phundament/posts/7y1TkmmsrcN?pid=6070967303804764434&oid=114873431066202526630))
+- application backend dashboard ([screenshots](https://plus.google.com/+phd/posts/7y1TkmmsrcN?pid=6070967303804764434&oid=114873431066202526630))
 - user management (dektrium/yii2-user)
 - role-based access control (dektrium/yii2-rbac)
 - runtime settings

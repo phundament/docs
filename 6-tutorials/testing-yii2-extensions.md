@@ -1,8 +1,8 @@
-### Phundament "Potemkin"-testing
+### phd "Potemkin"-testing
 
 **Note! This is a concept/prototype.**
 
-You can use *[Phundament 4](https://github.com/phundament/app)* in a docker-stack "wrapped around" the extension directory.
+You can use *[phd 4](https://github.com/phundament/app)* in a docker-stack "wrapped around" the extension directory.
 
 The basic concept is to start an application stack with `docker-compose` and "host-mount" the extension directly into `/vendor/name/extension`.
 

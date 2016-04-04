@@ -16,7 +16,7 @@ Create a new database to store application information.
 
 ### Composer installation
 
-You can install _Phundament 4_ using [composer](https://getcomposer.org/download/)...
+You can install _phd 4_ using [composer](https://getcomposer.org/download/)...
 
     composer global require "fxp/composer-asset-plugin:1.1.*"
     composer create-project --stability=beta phundament/app myapp
@@ -40,7 +40,7 @@ Run the application setup...
     
 Open `http://path-to-app/web` or `http://path-to-app/web?r=admin` in your browser.
 
-Afterwards you can access your Phundament application under `http://localhost/app/frontend/web` and `http://localhost/app/backend/web`.
+Afterwards you can access your phd application under `http://localhost/app/frontend/web` and `http://localhost/app/backend/web`.
 
 
 ### Virtual Hosts and nice URLs

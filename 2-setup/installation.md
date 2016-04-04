@@ -2,7 +2,7 @@ Installation
 ============
 
 > Note: Examples in this guide are run in the dockerized setup. 
-> You can run Phundament also  with [composer](../6-tutorials/installation-composer.md) 
+> You can run phd also  with [composer](../6-tutorials/installation-composer.md) 
 > for example within a Vagrant VM. 
 
 When starting a new project it is recommended to download a [packaged release](https://github.com/phundament/app/releases)
@@ -15,7 +15,7 @@ and create a fresh repository from it.
 
 ## `make` application
 
-Phundament uses `Makefile`s to execute common tasks during development, but you can also use standard *Docker* commands to control your stack.
+phd uses `Makefile`s to execute common tasks during development, but you can also use standard *Docker* commands to control your stack.
 See *phd* [README](https://github.com/phundament/app/blob/master/README.md) for some examples.
 
 Basically, `make` targets are just shorthands for lengthy Docker commands.

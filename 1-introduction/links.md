@@ -19,19 +19,19 @@ Community
 Documentation
 -------------
 
-- Phundament 4 API [HTML version](http://docs.phundament.com/4.0/) **(outdated**
-- Phundament 4 Guide [Repo](https://github.com/phundament/docs)
+- phd 4 API [HTML version](http://docs.phundament.com/4.0/) **(outdated**
+- phd 4 Guide [Repo](https://github.com/phundament/docs)
 - Yii2 Guide [HTML Version](http://www.yiiframework.com/doc-2.0/guide-index.html)
 
 Media
 -----
 
-- [Phundament Logo](http://t.phundament.com) CDN
+- [phd Logo](http://t.phundament.com) CDN
 - LESS based upon [Greenfield template]()
 - [Unsplash]() images from  [Todd Quackenbush]()
 
 Older Versions
 --------------
 
-- Phundament 3 [Website](http://v3.phundament.com/)
-- Phundament 3 [Branch](https://github.com/phundament/app/tree/3.0)
+- phd 3 [Website](http://v3.phundament.com/)
+- phd 3 [Branch](https://github.com/phundament/app/tree/3.0)

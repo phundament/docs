@@ -3,7 +3,7 @@ Configuration
 
 ## Introduction
 
-Phundament uses an environment variables based configuration, see also [Dev/prod parity](http://12factor.net/dev-prod-parity) for more information about this topic.
+phd uses an environment variables based configuration, see also [Dev/prod parity](http://12factor.net/dev-prod-parity) for more information about this topic.
 
 ## Environment settings
 

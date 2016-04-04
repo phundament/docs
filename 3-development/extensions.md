@@ -1,8 +1,8 @@
 Packages (Extensions)
 =====================
 
-It is very easy to extend a Phundament-based application with existing composer packages. You can integrate any Yii2 
-extension or PHP library into Phundament 4.
+It is very easy to extend a phd-based application with existing composer packages. You can integrate any Yii2 
+extension or PHP library into phd 4.
 
     docker-compose run --rm php bash
 

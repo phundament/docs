@@ -25,7 +25,7 @@ Production ready and industrial grade delivery, with regular updates ensured thr
 Branches
 --------
 
-The Phundament repository contains the following main branches:
+The phd repository contains the following main branches:
 
 - master (development, unstable)
 - 4.0 (alpha, beta, RC, stable releases)

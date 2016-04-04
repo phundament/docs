@@ -25,8 +25,8 @@ The application along with other services are run in containers, usually you hav
 you can also scale PHP-FPM with a haproxy or run multiple workers off a CLI container.
 
 - [View application Dockerfile](https://github.com/phundament/app/blob/master/Dockerfile)
-- [View Phundament Docker images](https://hub.docker.com/u/phundament/)
-- [View Phundament Docker images source-code](https://github.com/phundament/docker-images)
+- [View phd Docker images](https://hub.docker.com/u/phundament/)
+- [View phd Docker images source-code](https://github.com/phundament/docker-images)
 
 ### Services
 
@@ -38,7 +38,7 @@ caches or testing containers.
 ### Stacks
 
 Stacks and their service definitions can have different flavours. You may need slightly different setups in testing, staging
-and production environment. Phundament features as `yaml-converter-command`, which can create stack files from templates.
+and production environment. phd features as `yaml-converter-command`, which can create stack files from templates.
   
 - [View project stacks](https://github.com/phundament/app/tree/master/build/compose)
 
