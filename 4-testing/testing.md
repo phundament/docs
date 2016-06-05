@@ -22,7 +22,7 @@ Next step is to get a clean stack selected and configured by using `TEST` target
     
 Before the test-suites can be run, we need to setup the application, like during development setup, but in the test-stack.
     
-    make TEST setup up 
+    make TEST up setup 
 
 Enter the `tester` container    
     
